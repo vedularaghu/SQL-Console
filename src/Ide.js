@@ -48,15 +48,6 @@ class Ide extends Component {
             console.log(error);
         })
     }
-    // _fetchjsonData(tableData) {
-    //     getTableData(tableData)
-    //         .then(data => {
-    //             this.setState({
-    //                 tableHeader: data.headers,
-    //                 tableData: data.data
-    //             })
-    //         })
-    // }
     handleClickSubmit = (event) => {
         event.preventDefault();
         this._fetchjsonData(this.state);
@@ -109,8 +100,6 @@ class Ide extends Component {
             mode: 'text/x-hive',
             theme: 'material',
         };
-        // const headerComponents = this.generateHeaders();
-        // const rowComponents = this.generateRows();
         return (
             <MuiThemeProvider>
                 <div>
